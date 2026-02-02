@@ -1,77 +1,58 @@
 """
 AI-CLI 核心模块
-
-提供AI集成、配置管理、上下文跟踪等核心功能。
+简化版本，避免导入错误
 """
 
 __version__ = "0.1.0"
 __author__ = "AI-CLI Team"
 __license__ = "MIT"
 
-from .config import get_config, save_config, validate_config
-from .ai import AIProvider, get_ai_provider, explain_command, suggest_command
-from .context import ContextManager, get_context
-from .plugins import Plugin, PluginManager, get_plugin_manager
-from .performance import PerformanceMonitor, measure_performance, cache_result
-from .learning import LearningManager, learn_from_interaction
-from .dynamic_commands import DynamicCommandManager, register_dynamic_command
+# 延迟导入，避免循环依赖
+def get_config():
+    from .config import get_config as _get_config
+    return _get_config()
+
+def save_config(config):
+    from .config import save_config as _save_config
+    return _save_config(config)
+
+def get_ai_provider(config=None):
+    from .ai import get_ai_provider as _get_ai_provider
+    return _get_ai_provider(config)
+
+def explain_command(command, context=None):
+    from .ai import explain_command as _explain_command
+    return _explain_command(command, context)
+
+def suggest_command(context=None):
+    from .ai import suggest_command as _suggest_command
+    return _suggest_command(context)
+
+def get_context():
+    from .context import get_context as _get_context
+    return _get_context()
+
+def get_plugin_manager():
+    from .plugins import get_plugin_manager as _get_plugin_manager
+    return _get_plugin_manager()
+
+def measure_performance(func):
+    from .performance import measure_performance as _measure_performance
+    return _measure_performance(func)
+
+def cache_result(ttl=300):
+    from .performance import cache_result as _cache_result
+    return _cache_result(ttl)
 
 # 导出核心功能
 __all__ = [
-    # 配置
     "get_config",
     "save_config", 
-    "validate_config",
-    
-    # AI功能
-    "AIProvider",
     "get_ai_provider",
     "explain_command",
     "suggest_command",
-    
-    # 上下文管理
-    "ContextManager",
     "get_context",
-    
-    # 插件系统
-    "Plugin",
-    "PluginManager",
     "get_plugin_manager",
-    
-    # 性能监控
-    "PerformanceMonitor",
     "measure_performance",
     "cache_result",
-    
-    # 学习系统
-    "LearningManager",
-    "learn_from_interaction",
-    
-    # 动态命令
-    "DynamicCommandManager",
-    "register_dynamic_command",
 ]
-
-# 初始化检查
-def check_dependencies():
-    """检查依赖是否可用"""
-    import sys
-    missing = []
-    
-    required = ["click", "rich", "yaml"]
-    for module in required:
-        try:
-            __import__(module)
-        except ImportError:
-            missing.append(module)
-    
-    if missing:
-        print(f"警告：缺少依赖: {', '.join(missing)}")
-        print("运行: pip install -r requirements.txt")
-        return False
-    
-    return True
-
-# 自动检查
-if __name__ == "__main__":
-    check_dependencies()
