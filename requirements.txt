@@ -1,28 +1,22 @@
-# AI-CLI 依赖文件
-# 基础依赖 - 必需
-click>=8.0.0,<9.0.0
-rich>=13.0.0,<14.0.0
-pyyaml>=6.0.0,<7.0.0
-prompt-toolkit>=3.0.0,<4.0.0
-requests>=2.28.0,<3.0.0
+# 符灵 (Fuling) - 核心依赖
+# 古代符咒之灵，现代AI智能
 
-# AI 集成 - 可选（通过 extras_require 安装）
-# openai>=1.0.0,<2.0.0
-# ollama>=0.1.0,<0.2.0
+# 核心依赖
+click>=8.0.0
+pyyaml>=6.0
+requests>=2.28.0
 
-# 性能监控 - 可选
-# psutil>=5.9.0,<6.0.0
+# 开发依赖 (可选)
+# black>=23.0.0
+# flake8>=6.0.0
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# mypy>=1.0.0
 
-# 开发工具 - 可选
-# pytest>=7.0.0,<8.0.0
-# black>=23.0.0,<24.0.0
-# flake8>=6.0.0,<7.0.0
-# mypy>=1.0.0,<2.0.0
+# AI提供商依赖 (可选)
+# openai>=1.0.0  # OpenAI支持
+# anthropic>=0.25.0  # Anthropic支持
 
-# 插件依赖 - 可选
-# questionary>=2.0.0,<3.0.0
-
-# 注意：使用 pip install -e ".[dev]" 安装开发依赖
-# 使用 pip install -e ".[ai]" 安装 AI 依赖
-# 使用 pip install -e ".[performance]" 安装性能监控依赖
-# 使用 pip install -e ".[full]" 安装所有可选依赖
+# 主题增强 (可选)
+# rich>=13.0.0  # 终端美化
+# colorama>=0.4.6  # 跨平台颜色支持

@@ -29,7 +29,7 @@ Fuling: The ancient talisman spirit revived in modern times as an intelligent as
 
 ```bash
 # Install from source
-git clone https://github.com/yourusername/fuling.git
+git clone https://github.com/mai-xiyu/Fu-Ling-CLI.git
 cd fuling
 pip install -e .
 
@@ -188,7 +188,7 @@ fuling/
 ### Environment Setup
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/fuling.git
+git clone https://github.com/mai-xiyu/Fu-Ling-CLI.git
 cd fuling
 
 # 2. Create virtual environment
@@ -298,7 +298,7 @@ We welcome all forms of contributions!
 - Maintain backward compatibility
 
 ### Reporting Issues
-Please use [GitHub Issues](https://github.com/yourusername/fuling/issues) to report bugs or suggest features.
+Please use [GitHub Issues](https://github.com/mai-xiyu/Fu-Ling-CLI/issues) to report bugs or suggest features.
 
 ## 📄 License
 
@@ -314,9 +314,9 @@ Thanks to the following projects and technologies for inspiration:
 
 ## 📞 Contact
 
-- **GitHub**: [yourusername/fuling](https://github.com/yourusername/fuling)
-- **Issue Tracker**: [GitHub Issues](https://github.com/yourusername/fuling/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/fuling/discussions)
+- **GitHub**: [mai-xiyu/Fu-Ling-CLI](https://github.com/mai-xiyu/Fu-Ling-CLI)
+- **Issue Tracker**: [GitHub Issues](https://github.com/mai-xiyu/Fu-Ling-CLI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/mai-xiyu/Fu-Ling-CLI/discussions)
 
 ---
 
