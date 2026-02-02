@@ -1,0 +1,237 @@
+# AI-CLI 配置示例文件
+# 复制此文件为 config.yaml 并修改配置
+
+# AI 模型配置
+model:
+  # 模型名称
+  # - Moonshot AI: kimi-k2-turbo-preview, kimi-k2-turbo, moonshot-v1-8k, moonshot-v1-32k, moonshot-v1-128k
+  # - OpenAI: gpt-4o, gpt-4-turbo, gpt-3.5-turbo, o1-preview, o1-mini
+  # - Ollama: llama3.2:3b, qwen2.5:0.5b, phi3:mini, mistral:7b
+  # - 本地: local
+  name: "kimi-k2-turbo-preview"
+  
+  # 提供商
+  # - moonshot: Moonshot AI (Kimi)
+  # - openai: OpenAI
+  # - ollama: Ollama (本地)
+  # - local: 本地回退
+  provider: "moonshot"
+  
+  # API 密钥（建议使用环境变量）
+  # 设置环境变量: export MOONSHOT_API_KEY="your_key"
+  api_key: "${MOONSHOT_API_KEY}"
+  
+  # API 基础 URL
+  base_url: "https://api.moonshot.cn/v1"
+  
+  # 温度参数 (0.0-1.0)
+  # 较低值更确定，较高值更有创造性
+  temperature: 0.3
+  
+  # 最大 token 数
+  max_tokens: 1000
+  
+  # 请求超时（秒）
+  timeout: 30
+
+# 功能开关
+features:
+  # 自动建议：根据上下文提供命令建议
+  auto_suggest: true
+  
+  # 命令解释：解释 shell 命令的功能
+  explain_commands: true
+  
+  # 学习模式：学习用户的使用习惯
+  learn_patterns: true
+  
+  # 安全检查：检查命令的潜在风险
+  safety_check: true
+  
+  # 缓存启用：缓存 AI 响应以提高性能
+  enable_cache: true
+  
+  # 调试模式：显示详细调试信息
+  debug_mode: false
+
+# 命令别名
+# 创建自定义命令快捷方式
+aliases:
+  # 清理 Python 缓存文件
+  cleanup: "find . -name '*.pyc' -delete"
+  
+  # 统计 Git 提交数
+  stats: "git log --oneline | wc -l"
+  
+  # 查看大文件（大于10MB）
+  largefiles: "find . -type f -size +10M"
+  
+  # 快速进入项目目录
+  proj: "cd ~/projects"
+  
+  # 查看当前目录大小
+  dirsize: "du -sh ."
+  
+  # 查找最近修改的文件
+  recent: "find . -type f -mtime -1"
+
+# 插件配置
+plugins:
+  # 启用的插件列表
+  # 插件位于 ~/.config/ai-cli/plugins/
+  enabled:
+    - example
+    - git-enhancer
+  
+  # 禁用的插件列表
+  disabled:
+    - experimental
+  
+  # 插件特定配置
+  settings:
+    # 天气插件配置
+    weather:
+      api_key: "${WEATHER_API_KEY}"
+      units: "metric"  # metric 或 imperial
+      language: "zh"
+    
+    # Git 插件配置
+    git:
+      auto_fetch: true
+      show_untracked: true
+
+# 用户界面配置
+ui:
+  # 主题颜色
+  theme: "default"  # default, dark, light
+  
+  # 动画效果
+  animations: true
+  
+  # 进度条样式
+  progress_style: "bar"  # bar, spinner, none
+  
+  # 输出格式
+  output_format: "rich"  # rich, plain, json
+  
+  # 颜色支持
+  colors: true
+
+# 性能配置
+performance:
+  # 缓存 TTL（秒）
+  cache_ttl: 300
+  
+  # 最大缓存大小（MB）
+  max_cache_size: 100
+  
+  # 并发限制
+  max_concurrent: 5
+  
+  # 启用预加载
+  preload: true
+  
+  # 启用压缩
+  compression: true
+
+# 学习配置
+learning:
+  # 学习模式
+  # - adaptive: 自适应学习
+  # - passive: 被动学习（仅记录）
+  # - active: 主动学习（频繁更新）
+  mode: "adaptive"
+  
+  # 历史记录大小
+  history_size: 1000
+  
+  # 个性化程度 (0.0-1.0)
+  personalization: 0.7
+  
+  # 隐私模式
+  privacy_mode: false
+
+# 网络配置
+network:
+  # 代理设置
+  proxy:
+    http: ""
+    https: ""
+  
+  # 重试设置
+  retry:
+    max_attempts: 3
+    backoff_factor: 1.0
+  
+  # 超时设置（秒）
+  timeout:
+    connect: 10
+    read: 30
+
+# 日志配置
+logging:
+  # 日志级别
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  
+  # 日志文件
+  file:
+    enabled: true
+    path: "~/.config/ai-cli/logs/ai-cli.log"
+    max_size: 10  # MB
+    backup_count: 5
+  
+  # 控制台输出
+  console:
+    enabled: true
+    format: "rich"
+
+# 安全配置
+security:
+  # API 密钥加密
+  encrypt_api_keys: false
+  
+  # 命令历史加密
+  encrypt_history: false
+  
+  # 自动清除敏感数据
+  auto_clean: true
+  
+  # 清除间隔（小时）
+  clean_interval: 24
+
+# 示例配置 - 多环境配置
+# environments:
+#   development:
+#     model:
+#       provider: "local"
+#     features:
+#       debug_mode: true
+#   
+#   production:
+#     model:
+#       provider: "moonshot"
+#       api_key: "${PROD_MOONSHOT_API_KEY}"
+#     features:
+#       debug_mode: false
+#   
+#   testing:
+#     model:
+#       provider: "openai"
+#       api_key: "${TEST_OPENAI_API_KEY}"
+
+# 使用说明：
+# 1. 复制此文件为 config.yaml
+# 2. 修改配置项
+# 3. 设置环境变量（推荐）
+# 4. 运行 ai init 进行交互式配置
+
+# 环境变量示例：
+# export MOONSHOT_API_KEY="your_api_key_here"
+# export OPENAI_API_KEY="your_api_key_here"
+# export WEATHER_API_KEY="your_api_key_here"
+
+# 快速开始：
+# 1. cp config.example.yaml ~/.config/ai-cli/config.yaml
+# 2. 编辑配置文件
+# 3. ai init
+# 4. ai status

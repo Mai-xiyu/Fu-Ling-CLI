@@ -1,0 +1,95 @@
+# ============================================
+# AI-CLI Git 忽略规则
+# 安全要求：不推送测试文件和敏感信息
+# ============================================
+
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 包分发文件
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 测试文件 - 重要：不推送到 GitHub！
+tests/
+test_*.py
+*_test.py
+*.test.py
+
+# 测试相关文件
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# 虚拟环境
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 环境变量和敏感信息
+.env
+.env.*
+.secrets
+*.key
+*.pem
+*.crt
+config.local.yaml
+*.local.*
+
+# 日志文件
+*.log
+logs/
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.temp
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 开发工具（可选排除）
+setup_enhanced.py
+.pre-commit-config.yaml
+.flake8
+.mypy.ini
+
+# 注意：只推送生产就绪代码
+# 排除所有测试和开发文件
