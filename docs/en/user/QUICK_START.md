@@ -5,7 +5,7 @@
 ### 方式一：从源码安装（推荐）
 ```bash
 # 克隆仓库
-git clone https://github.com/xiyu-bot-assistant/ai-cli.git
+git clone https://github.com/Mai-xiyu/Fu-Ling-CLI.git
 cd ai-cli
 
 # 安装依赖

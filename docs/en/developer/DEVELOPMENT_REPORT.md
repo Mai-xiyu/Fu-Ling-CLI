@@ -9,7 +9,7 @@
 **项目名称**: AI-CLI - 智能命令行助手  
 **当前版本**: v0.1.0  
 **开发状态**: Alpha（功能完整，测试中）  
-**GitHub仓库**: https://github.com/xiyu-bot-assistant/ai-cli（账户暂停中）
+**GitHub仓库**: https://github.com/Mai-xiyu/Fu-Ling-CLI
 
 ---
 

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Fuling Logo](docs/images/fuling_logo.png)
+![Fuling Logo](../fuling_logo.svg)
 
 **Ancient Talisman Spirit · Modern AI Intelligence**
 
@@ -324,6 +324,6 @@ Thanks to the following projects and technologies for inspiration:
 
 **Fuling - Making CLI Smarter, Development More Efficient**
 
-![Fuling](docs/images/fuling_banner.png)
+![Fuling](../fuling_logo_square.svg)
 
 </div>

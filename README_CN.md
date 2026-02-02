@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![符灵Logo](docs/images/fuling_logo.png)
+![符灵Logo](fuling_logo.svg)
 
 **古代符咒之灵 · 现代AI智能**
 
@@ -29,8 +29,8 @@
 
 ```bash
 # 从源码安装
-git clone https://github.com/yourusername/fuling.git
-cd fuling
+git clone https://github.com/Mai-xiyu/Fu-Ling-CLI.git
+cd Fu-Ling-CLI
 pip install -e .
 
 # 或直接使用（开发中）
@@ -188,8 +188,8 @@ fuling/
 ### 环境设置
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/yourusername/fuling.git
-cd fuling
+git clone https://github.com/Mai-xiyu/Fu-Ling-CLI.git
+cd Fu-Ling-CLI
 
 # 2. 创建虚拟环境
 python -m venv venv
@@ -298,7 +298,7 @@ mypy fuling_cli.py fuling_core.py fuling_ai.py
 - 保持向后兼容性
 
 ### 报告问题
-请使用 [GitHub Issues](https://github.com/yourusername/fuling/issues) 报告bug或提出功能建议。
+请使用 [GitHub Issues](https://github.com/Mai-xiyu/Fu-Ling-CLI/issues) 报告bug或提出功能建议。
 
 ## 📄 许可证
 
@@ -326,6 +326,6 @@ mypy fuling_cli.py fuling_core.py fuling_ai.py
 
 **符灵 - 让命令行更智能，让开发更高效**
 
-![符灵](docs/images/fuling_banner.png)
+![符灵](fuling_logo_square.svg)
 
 </div>

@@ -433,4 +433,4 @@ api_key = os.getenv("MOONSHOT_API_KEY")
 **更多信息**：
 - 查看 [插件开发指南](./PLUGIN_GUIDE.md)
 - 参考 [示例代码](../examples/)
-- 提交 [Issue](https://github.com/xiyu-bot-assistant/ai-cli/issues)
+- 提交 [Issue](https://github.com/Mai-xiyu/Fu-Ling-CLI/issues)

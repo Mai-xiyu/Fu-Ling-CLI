@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![符灵Logo](docs/images/fuling_logo.png)
+![符灵Logo](../fuling_logo.svg)
 
 **古代符咒之灵 · 现代AI智能**
 
@@ -324,6 +324,6 @@ mypy fuling_cli.py fuling_core.py fuling_ai.py
 
 **符灵 - 让命令行更智能，让开发更高效**
 
-![符灵](docs/images/fuling_banner.png)
+![符灵](../fuling_logo_square.svg)
 
 </div>

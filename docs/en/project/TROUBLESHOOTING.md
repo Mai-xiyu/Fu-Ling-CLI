@@ -261,7 +261,7 @@ ai perf report --detailed
 ## 获取帮助
 
 ### 官方资源
-- **GitHub仓库**: https://github.com/kawinkhae101-pixel/ai-cli
+- **GitHub仓库**: https://github.com/Mai-xiyu/Fu-Ling-CLI
 - **文档**: https://github.com/kawinkhae101-pixel/ai-cli/tree/main/docs
 - **问题反馈**: https://github.com/kawinkhae101-pixel/ai-cli/issues
 

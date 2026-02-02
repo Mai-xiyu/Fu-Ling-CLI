@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Fuling Logo](docs/images/fuling_logo.png)
+![Fuling Logo](fuling_logo.svg)
 
 **Ancient Talisman Spirit · Modern AI Intelligence**
 
@@ -29,8 +29,8 @@ Fuling: The ancient talisman spirit revived in modern times as an intelligent as
 
 ```bash
 # Install from source
-git clone https://github.com/yourusername/fuling.git
-cd fuling
+git clone https://github.com/Mai-xiyu/Fu-Ling-CLI.git
+cd Fu-Ling-CLI
 pip install -e .
 
 # Or use directly (under development)
@@ -188,8 +188,8 @@ fuling/
 ### Environment Setup
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/fuling.git
-cd fuling
+git clone https://github.com/Mai-xiyu/Fu-Ling-CLI.git
+cd Fu-Ling-CLI
 
 # 2. Create virtual environment
 python -m venv venv
@@ -298,7 +298,7 @@ We welcome all forms of contributions!
 - Maintain backward compatibility
 
 ### Reporting Issues
-Please use [GitHub Issues](https://github.com/yourusername/fuling/issues) to report bugs or suggest features.
+Please use [GitHub Issues](https://github.com/Mai-xiyu/Fu-Ling-CLI/issues) to report bugs or suggest features.
 
 ## 📄 License
 
@@ -326,6 +326,6 @@ Thanks to the following projects and technologies for inspiration:
 
 **Fuling - Making CLI Smarter, Development More Efficient**
 
-![Fuling](docs/images/fuling_banner.png)
+![Fuling](fuling_logo_square.svg)
 
 </div>

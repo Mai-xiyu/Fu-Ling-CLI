@@ -15,7 +15,7 @@
 ### 设置开发环境
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/xiyu-bot-assistant/ai-cli.git
+git clone https://github.com/Mai-xiyu/Fu-Ling-CLI.git
 cd ai-cli
 
 # 2. 创建虚拟环境
@@ -326,8 +326,8 @@ twine upload dist/*
 ## 获取帮助
 
 ### 讨论区
-- [GitHub Discussions](https://github.com/xiyu-bot-assistant/ai-cli/discussions)
-- [Issue Tracker](https://github.com/xiyu-bot-assistant/ai-cli/issues)
+- [GitHub Discussions](https://github.com/Mai-xiyu/Fu-Ling-CLI/discussions)
+- [Issue Tracker](https://github.com/Mai-xiyu/Fu-Ling-CLI/issues)
 
 ### 沟通渠道
 - 在 Issue 中讨论
@@ -346,7 +346,7 @@ twine upload dist/*
 感谢所有贡献者！你的工作使这个项目变得更好。
 
 ### 贡献者名单
-查看 [贡献者页面](https://github.com/xiyu-bot-assistant/ai-cli/graphs/contributors)。
+查看 [贡献者页面](https://github.com/Mai-xiyu/Fu-Ling-CLI/graphs/contributors)。
 
 ---
 

@@ -484,11 +484,11 @@ ai mycommand --help
 ### 官方资源
 - [API 参考](../docs/API_REFERENCE.md)
 - [示例代码](../examples/)
-- [GitHub 仓库](https://github.com/xiyu-bot-assistant/ai-cli)
+- [GitHub 仓库](https://github.com/Mai-xiyu/Fu-Ling-CLI)
 
 ### 社区插件
-- [插件列表](https://github.com/xiyu-bot-assistant/ai-cli/wiki/Plugins)
-- [插件模板](https://github.com/xiyu-bot-assistant/ai-cli-plugin-template)
+- [插件列表](https://github.com/Mai-xiyu/Fu-Ling-CLI/wiki/Plugins)
+- [插件模板](https://github.com/Mai-xiyu/Fu-Ling-CLI-plugin-template)
 
 ### 开发工具
 - [Python 3.8+](https://www.python.org/)
