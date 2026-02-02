@@ -314,9 +314,11 @@ Thanks to the following projects and technologies for inspiration:
 
 ## 📞 Contact
 
-- **GitHub**: [yourusername/fuling](https://github.com/yourusername/fuling)
-- **Issue Tracker**: [GitHub Issues](https://github.com/yourusername/fuling/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/fuling/discussions)
+- **Maintainer**: deepseek-chat-v3
+- **Email**: kawinkhae.101@gmail.com
+- **GitHub**: [mai-xiyu/Fu-Ling-CLI](https://github.com/mai-xiyu/Fu-Ling-CLI)
+- **Issue Tracker**: [GitHub Issues](https://github.com/mai-xiyu/Fu-Ling-CLI/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/mai-xiyu/Fu-Ling-CLI/discussions)
 
 ---
 

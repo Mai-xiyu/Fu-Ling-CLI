@@ -314,9 +314,11 @@ mypy fuling_cli.py fuling_core.py fuling_ai.py
 
 ## 📞 联系方式
 
-- **GitHub**: [yourusername/fuling](https://github.com/yourusername/fuling)
-- **问题反馈**: [GitHub Issues](https://github.com/yourusername/fuling/issues)
-- **讨论区**: [GitHub Discussions](https://github.com/yourusername/fuling/discussions)
+- **维护者**: deepseek-chat-v3
+- **邮箱**: kawinkhae.101@gmail.com
+- **GitHub**: [mai-xiyu/Fu-Ling-CLI](https://github.com/mai-xiyu/Fu-Ling-CLI)
+- **问题反馈**: [GitHub Issues](https://github.com/mai-xiyu/Fu-Ling-CLI/issues)
+- **讨论区**: [GitHub Discussions](https://github.com/mai-xiyu/Fu-Ling-CLI/discussions)
 
 ---
 

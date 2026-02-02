@@ -283,6 +283,50 @@ def power():
         click.echo("  设置API密钥: export MOONSHOT_API_KEY='your_key'")
 
 @cli.command()
+def config():
+    """配置符灵"""
+    from .provider_config import configure_provider_interactive, show_provider_status
+    
+    click.echo(format_text("配置符灵", "prompt"))
+    
+    click.echo("\n📋 配置选项:")
+    click.echo("  1. AI提供商配置")
+    click.echo("  2. 查看当前状态")
+    click.echo("  3. 返回")
+    
+    choice = click.prompt("请选择", type=int, default=2)
+    
+    if choice == 1:
+        configure_provider_interactive()
+    elif choice == 2:
+        show_provider_status()
+    else:
+        click.echo("返回主菜单")
+
+@cli.command()
+def team():
+    """团队协作功能"""
+    from .team import team_cli
+    team_cli()
+    from .provider_config import configure_provider_interactive, show_provider_status
+    
+    click.echo(format_text("配置符灵", "prompt"))
+    
+    click.echo("\n📋 配置选项:")
+    click.echo("  1. AI提供商配置")
+    click.echo("  2. 查看当前状态")
+    click.echo("  3. 返回")
+    
+    choice = click.prompt("请选择", type=int, default=2)
+    
+    if choice == 1:
+        configure_provider_interactive()
+    elif choice == 2:
+        show_provider_status()
+    else:
+        click.echo("返回主菜单")
+
+@cli.command()
 def fortune():
     """今日运势（随机命令建议）"""
     import random

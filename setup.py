@@ -11,8 +11,8 @@ with open("README_CN.md", "r", encoding="utf-8") as fh:
 setup(
     name="fuling",
     version="0.1.0",
-    author="符灵开发者",
-    author_email="fuling@example.com",
+    author="deepseek-chat-v3",
+    author_email="kawinkhae.101@gmail.com",
     description="符灵 (Fú Líng) - 智能命令行助手",
     long_description=long_description,
     long_description_content_type="text/markdown",

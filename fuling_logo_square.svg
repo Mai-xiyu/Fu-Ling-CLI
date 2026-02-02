@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 方形简约Logo -->
+  
+  <!-- 方形背景 -->
+  <rect x="10" y="10" width="180" height="180" rx="20" fill="#1a237e" opacity="0.9"/>
+  
+  <!-- 边框 -->
+  <rect x="10" y="10" width="180" height="180" rx="20" fill="none" stroke="#ffd700" stroke-width="2"/>
+  
+  <!-- 核心符号 -->
+  <circle cx="100" cy="100" r="15" fill="#ffffff"/>
+  
+  <!-- 数据流符号 -->
+  <path d="M60,100 C70,70 100,65 140,100" 
+        fill="none" stroke="#4fc3f7" stroke-width="3" stroke-linecap="round"/>
+  
+  <path d="M60,100 C70,130 100,135 140,100" 
+        fill="none" stroke="#4fc3f7" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 连接点 -->
+  <circle cx="80" cy="80" r="4" fill="#ffffff"/>
+  <circle cx="120" cy="80" r="4" fill="#ffffff"/>
+  <circle cx="80" cy="120" r="4" fill="#ffffff"/>
+  <circle cx="120" cy="120" r="4" fill="#ffffff"/>
+  
+  <!-- 连接线 -->
+  <line x1="80" y1="80" x2="100" y2="100" stroke="#ffffff" stroke-width="2"/>
+  <line x1="120" y1="80" x2="100" y2="100" stroke="#ffffff" stroke-width="2"/>
+  <line x1="80" y1="120" x2="100" y2="100" stroke="#ffffff" stroke-width="2"/>
+  <line x1="120" y1="120" x2="100" y2="100" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- 底部文字 -->
+  <text x="100" y="170" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="18" fill="#ffffff" font-weight="bold">
+    符灵
+  </text>
+</svg>

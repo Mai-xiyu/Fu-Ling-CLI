@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 简约风符灵Logo -->
+  
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="#1a237e" opacity="0.9"/>
+  
+  <!-- 外环 -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.8"/>
+  
+  <!-- 核心符号：古代符咒与现代AI的结合 -->
+  
+  <!-- 中心圆点（智慧核心） -->
+  <circle cx="100" cy="100" r="12" fill="#ffffff"/>
+  
+  <!-- 数据流/符咒线条 -->
+  <path d="M60,100 Q80,60 100,60 Q120,60 140,100" 
+        fill="none" stroke="#4fc3f7" stroke-width="3" stroke-linecap="round"/>
+  
+  <path d="M60,100 Q80,140 100,140 Q120,140 140,100" 
+        fill="none" stroke="#4fc3f7" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- 二进制/符咒点阵 -->
+  <circle cx="80" cy="80" r="3" fill="#ffffff"/>
+  <circle cx="120" cy="80" r="3" fill="#ffffff"/>
+  <circle cx="80" cy="120" r="3" fill="#ffffff"/>
+  <circle cx="120" cy="120" r="3" fill="#ffffff"/>
+  
+  <!-- 连接线 -->
+  <line x1="80" y1="80" x2="100" y2="100" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  <line x1="120" y1="80" x2="100" y2="100" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  <line x1="80" y1="120" x2="100" y2="100" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  <line x1="120" y1="120" x2="100" y2="100" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- 外圈装饰点 -->
+  <circle cx="60" cy="100" r="2" fill="#ffd700"/>
+  <circle cx="140" cy="100" r="2" fill="#ffd700"/>
+  <circle cx="100" cy="60" r="2" fill="#ffd700"/>
+  <circle cx="100" cy="140" r="2" fill="#ffd700"/>
+  
+  <!-- 45度角装饰点 -->
+  <circle cx="71" cy="71" r="1.5" fill="#4fc3f7"/>
+  <circle cx="129" cy="71" r="1.5" fill="#4fc3f7"/>
+  <circle cx="71" cy="129" r="1.5" fill="#4fc3f7"/>
+  <circle cx="129" cy="129" r="1.5" fill="#4fc3f7"/>
+  
+  <!-- 文字：符灵 -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="16" fill="#ffffff" font-weight="bold">
+    符灵
+  </text>
+  
+  <!-- 英文：Fuling -->
+  <text x="100" y="195" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="10" fill="#ffd700" opacity="0.8">
+    Fuling
+  </text>
+</svg>

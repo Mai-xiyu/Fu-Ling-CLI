@@ -51,15 +51,19 @@ class FulingConfig:
                 "name": "符灵",
                 "version": "0.1.0",
                 "theme": "ancient",
+                "language": "zh",  # zh | en
             },
             "model": {
-                "provider": "moonshot",
-                "name": "kimi-k2-turbo-preview",
-                "api_key": "${MOONSHOT_API_KEY}",
+                "provider": "moonshot",  # moonshot | openai | local
+                "name": "kimi-k2-turbo-preview",  # 模型名称
+                "api_key": "${MOONSHOT_API_KEY}",  # 环境变量
                 "base_url": "https://api.moonshot.cn/v1",
+                "organization": "",  # OpenAI组织ID
                 "temperature": 0.3,
                 "max_tokens": 1000,
                 "timeout": 30,
+                "retry_attempts": 3,
+                "retry_delay": 2,
             },
             "features": {
                 "auto_suggest": True,
@@ -67,9 +71,12 @@ class FulingConfig:
                 "learn_patterns": True,
                 "enable_cache": True,
                 "show_banner": True,
+                "log_usage": False,
+                "save_history": True,
+                "max_history": 100,
             },
             "theme": {
-                "name": "ancient",
+                "name": "ancient",  # ancient | modern | dark | light
                 "colors": {
                     "primary": "#1a237e",
                     "accent": "#ffd700",
@@ -77,6 +84,7 @@ class FulingConfig:
                     "success": "#4caf50",
                     "warning": "#ff9800",
                     "error": "#f44336",
+                    "info": "#2196f3",
                 },
                 "symbols": {
                     "prompt": "🔮",
@@ -84,7 +92,17 @@ class FulingConfig:
                     "error": "❌",
                     "warning": "⚠️",
                     "info": "💡",
+                    "command": "📜",
+                    "code": "📝",
+                    "system": "💻",
+                    "network": "🌐",
                 }
+            },
+            "paths": {
+                "config_dir": "~/.config/fuling",
+                "cache_dir": "~/.cache/fuling",
+                "log_dir": "~/.local/share/fuling/logs",
+                "plugin_dir": "~/.config/fuling/plugins",
             }
         }
     
